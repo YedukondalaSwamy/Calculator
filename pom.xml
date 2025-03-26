@@ -41,7 +41,7 @@
                 <archive>
                     <manifestEntries>
                         <!-- Replace this with your fully qualified Main-Class name -->
-                        <Main-Class>com.localhost.Calculator</Main-Class>  
+                        <Main-Class>https://localhost:8000</Main-Class>  
                     </manifestEntries>
                 </archive>
             </configuration>

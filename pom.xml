@@ -49,7 +49,7 @@
                     <archive>
                         <manifestEntries>
                             <!-- Replace with your main class name -->
-                            <Main-Class>com.houari.Calculator</Main-Class> <!-- Update with your main class -->
+                            <Main-Class>https://localhost:8000</Main-Class> <!-- Update with your main class -->
                         </manifestEntries>
                     </archive>
                 </configuration>

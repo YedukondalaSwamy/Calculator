@@ -1,8 +1,22 @@
 package com.houari;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 public class Calculator {
     public static void main(String[] args) {
-        // Your program logic
-        System.out.println("Calculator running...");
+        try {
+            URL url = new URL("http://localhost:8080/api/resource"); // Your local endpoint
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+
+            // Print the response from the server (for example)
+            int responseCode = connection.getResponseCode();
+            System.out.println("Response Code: " + responseCode);
+
+            // Further logic here
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
